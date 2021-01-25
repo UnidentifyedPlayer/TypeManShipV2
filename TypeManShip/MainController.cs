@@ -345,8 +345,8 @@ namespace TypeManShip
                 int count = 0;
                 for(int z = 0; z < cur_entry.press_data.Count; z++)
                 {
-                    if ((cur_entry.press_data[z].key_down_time <= z)
-                        && (cur_entry.press_data[z].key_up_time >= z))
+                    if ((cur_entry.press_data[z].key_down_time <= time)
+                        && (cur_entry.press_data[z].key_up_time >= time))
                         count++;
                 }
                 if (count > 1)
